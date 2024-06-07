@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Add Product</h1>
+  <div class="container">
+    <form id="addItemForm">
+      <label for="dishName">Dish Name:</label>
+      <input type="text" id="dishName" name="dishName" required><br><br>
+  
+      <label for="countryOfOrigin">Country of Origin:</label>
+      <input type="text" id="countryOfOrigin" name="countryOfOrigin" required><br><br>
+  
+      <label for="typeOfDish">Type of Dish:</label>
+      <input type="text" id="typeOfDish" name="typeOfDish" required><br><br>
+      
+      <label for="dishPrice">Price:</label>
+      <input type="number" id="dishPrice" name="dishPrice" required><br><br>
+  
+      <label for="isVegetarian">Vegetarian:</label>
+      <input type="checkbox" id="isVegetarian" name="isVegetarian"><br><br>
+  
+      <label for="isNonVegetarian">Non Vegetarian:</label>
+      <input type="checkbox" id="isNonVegetarian" name="isNonVegetarian"><br><br>
+  
+      <label for="isVegan">Vegan:</label>
+      <input type="checkbox" id="isVegan" name="isVegan"><br><br>
+  
+      <button type="submit" id="addItemBtn">Add Product</button>
+  </form>
+  </div>
+
+  <div id="addedProductContainer" style="display: none;">
+    <h2>Product Added Successfully:</h2>
+    <p id="addedProduct"></p>
+</div>
+
+  <script src="script_add.js"></script>
+</body>
+</html>
